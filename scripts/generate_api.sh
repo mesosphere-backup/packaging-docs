@@ -5,7 +5,7 @@
 set -e -o pipefail
 
 REPO_DIR="$(git rev-parse --show-toplevel)"
-API_VERSION="${1:-""}"
+API_VERSION="${1:-"snapshot"}"
 RAML_DIR="${2:-"$REPO_DIR/docs"}"
 TARGET_DIR="${3:-"$REPO_DIR/target/api-$API_VERSION"}"
 
