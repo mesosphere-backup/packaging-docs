@@ -5,8 +5,8 @@
 set -e -o pipefail
 
 REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
-RAML_DIR="${1:-"$REPO_DIR/docs"}"
-TARGET_DIR="${2:-"$REPO_DIR/target"}"
+TARGET_DIR="${1:-"$REPO_DIR/target"}"
+RAML_DIR="${2:-"$REPO_DIR/docs"}"
 
 mkdir -p "$TARGET_DIR"
 
